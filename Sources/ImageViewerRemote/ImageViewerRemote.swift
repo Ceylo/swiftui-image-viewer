@@ -62,7 +62,7 @@ public struct ImageViewerRemote: View {
                     VStack {
                         ZStack {
                             if(self.disableCache == nil || self.disableCache == false) {
-                                URLImage(url: URL(string: self.imageURL) ?? URL(string: "https://via.placeholder.com/150.png")!, content: { image in
+                                URLImage(URL(string: self.imageURL) ?? URL(string: "https://via.placeholder.com/150.png")!, content: { image in
                                 image
                                     .resizable()
                                     .aspectRatio(self.aspectRatio?.wrappedValue, contentMode: .fit)
